@@ -6,22 +6,24 @@
 
 :root{
   --text-color: white;
-  --bg-url:  url(./assets/bg-mobile.jpg);
+  --bg-url: linear-gradient(to right top, #23173f, #1f1a3c, #1c1b39, #1a1d35, #1a1e31);;
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05) ;
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highligth-color:rgba(255, 255, 255, 0.2) ;
   --switch-bg-url: url(assets/moon-stars.svg);
+  --img-border: 2px solid rgb(255, 255, 255);
 }
 
 .light{
   --text-color: rgb(0, 0, 0);
-  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --bg-url: linear-gradient(to right top, #214c8e, #1a91cd, #1fd4dd, #00ad71, #a2cb46);;
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05) ;
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highligth-color:rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(assets/sun.svg);
+  --img-border: 2px solid rgb(0, 0, 0);
 }
 
 body{
@@ -44,7 +46,8 @@ body *{
 }
 #profile img{
  width: 112px;
-
+ border-radius: 30%;
+ border: var(--img-border);
 }
 #profile p{
   margin-top: 8px;
